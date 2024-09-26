@@ -43,6 +43,7 @@
 
 .faq-answer {
   margin: 0.75rem 1rem;
+  display:none; 
 }
 
 .faq-answer-text {
