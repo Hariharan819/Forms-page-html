@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+
+<body>
+    <div class="faq-container">
+        <h1 class="faq-heading">FAQ</h1>
+
+        <div class="faq-item">
+            <div class="faq-item-content" onclick="toggleFAQ(1)">
+                <img class="faq-toggle-icon" src="https://img.icons8.com/?size=100&id=62888&format=png&color=000000"
+                    alt="Expand" id="icon-1" />
+                <p class="faq-question">What is TECH CHECK?</p>
+            </div>
+            <div class="faq-answer" id="answer-1">
+                <p class="faq-answer-text">
+                    TECH CHECK is a company that provides intelligent solutions for clients with their recruitment and
+                    talent assessment processes.
+                </p>
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-item-content" onclick="toggleFAQ(2)">
+                <img class="faq-toggle-icon" src="https://img.icons8.com/?size=100&id=62888&format=png&color=000000"
+                    alt="Expand" id="icon-2" />
+                <p class="faq-question">How does TECH CHECK ensure a personalized consulting experience?</p>
+            </div>
+            <div class="faq-answer" id="answer-2">
+                <p class="faq-answer-text">
+                    Our experts collaborate closely with you, understanding your unique challenges and goals. We tailor
+                    our services to meet your specific needs, ensuring a personalized consulting experience that
+                    empowers your business to thrive.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <h1 class="heading">Contact Us</h1>
+        <form action="" class="form" onsubmit="onSubmit(event)">
+
+            <div class="input-group">
+                <input type="text" name="name" placeholder="Name" class="input" required />
+                <input type="email" name="email" placeholder="Email" class="input" required />
+            </div>
+            
+            <div class="textarea-container">
+                <textarea class="textarea" name="message" placeholder="Message" required></textarea>
+            </div>
+            <div class="recaptcha-container">
+
+            </div>
+            <div class="button-container">
+                <button type="submit" class="button" id="submitBtn">Send</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
