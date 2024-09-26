@@ -46,13 +46,14 @@
 
     <div class="container">
         <h1 class="heading">Contact Us</h1>
-        <form action="" class="form" onsubmit="onSubmit(event)">
+        <form action="" class="form" method="post" id="form">
+            <input type="hidden" name="access_key" value="6d3264ae-cfa3-4828-8a2b-665a2a7184c8">
 
             <div class="input-group">
                 <input type="text" name="name" placeholder="Name" class="input" required />
                 <input type="email" name="email" placeholder="Email" class="input" required />
             </div>
-            
+
             <div class="textarea-container">
                 <textarea class="textarea" name="message" placeholder="Message" required></textarea>
             </div>
@@ -62,6 +63,7 @@
             <div class="button-container">
                 <button type="submit" class="button" id="submitBtn">Send</button>
             </div>
+            <!-- <div id="result"></div> -->
         </form>
     </div>
 
